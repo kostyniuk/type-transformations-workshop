@@ -7,6 +7,8 @@ const myFunc = () => {
 /**
  * How do we extract MyFuncReturn from myFunc?
  */
-type MyFuncReturn = unknown;
+type MyFunc = typeof myFunc;
+type MyFuncReturn = ReturnType<MyFunc>;
 
-type tests = [Expect<Equal<MyFuncReturn, string>>];
+// oxlint-disable-next-line no-unused-vars
+type tests = [Expect<Equal<MyFuncReturn, string>>]; 

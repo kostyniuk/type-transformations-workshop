@@ -12,6 +12,10 @@ const testingFrameworks = {
   },
 };
 
-type TestingFramework = unknown;
+console.log(Object.keys(testingFrameworks))
+
+type TestingFrameworks = typeof testingFrameworks
+
+type TestingFramework = keyof TestingFrameworks;
 
 type tests = [Expect<Equal<TestingFramework, "vitest" | "jest" | "mocha">>];
