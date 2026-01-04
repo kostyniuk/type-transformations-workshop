@@ -130,7 +130,9 @@
     "e-40": "tt-cli run 40",
     "s-40": "tt-cli run 40 --solution",
     "lint": "oxlint",
-    "lint:fix": "oxlint --fix"
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt --write",
+    "format:check": "oxfmt --check"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
