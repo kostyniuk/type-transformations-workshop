@@ -11,6 +11,7 @@
     "jsdom": "^25.0.0",
     "oxfmt": "^0.21.0",
     "oxlint": "^1.36.0",
+    "oxlint-tsgolint": "^0.10.1",
     "prettier": "^3.0.0",
     "ts-toolbelt": "^9.6.0",
     "typescript": "^5.4.5",
@@ -129,8 +130,8 @@
     "s-39": "tt-cli run 39 --solution",
     "e-40": "tt-cli run 40",
     "s-40": "tt-cli run 40 --solution",
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
+    "lint": "oxlint --type-aware --type-check",
+    "lint:fix": "oxlint --type-aware --type-check --fix",
     "format": "oxfmt --write",
     "format:check": "oxfmt --check"
   },
